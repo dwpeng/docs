@@ -27,7 +27,7 @@ python中的变量名只是指向了变量值，而不是将变量值赋值给�
 3. [布尔类型](#布尔类型)
 4. [字符串类型](#字符串类型)
 5. [None类型](#none类型)
-
+6. 复数类型（不常用，这里不做介绍）
 
 ## 整型
 和数学中的整数相同，不存在小数部分
@@ -75,10 +75,55 @@ a = None
 
 
 ## 类型转换
+在python中，类型转换需要使用特定的函数来进行转换
+
+### 转换成字符串
+使用`str`可以将其他类型转换为字符串类型
+
 ```python
-int
-float
-str
-bool
-None
+str(1)      # '1'
+str(True)   # 'True'
+str(1.0)    # '1.0'
+str(None)   # 'None'
+str('abc')  # 'abc'
+```
+### 转换为整型
+使用`int`可以将浮点型，或者全为整数的字符串转换为整型
+```python
+int(1.0)    # 1
+int('111')  # 111
+int(1)      # 1
+int(False)  # 0
+int(True)   # 1
+int(None)   # 不可以将None转换成整型
+```
+
+### 转换为浮点型
+使用`float`可以将整型转换为浮点类型
+
+```python
+flaot(1)  # 1.0
+```
+
+### 转换为布尔类型
+使用`bool`可以将非0数字转换为`True`，0被转换为`False`
+
+::: danger 布尔类型转换
+Python与其他语言不同，在其他编程语言中，大于0的数字被转化为True，而小于等于0的数字被转化为False。
+:::
+
+
+```python
+bool(1)    # True
+bool(1.0)  # True
+bool(-1)   # True
+bool(0)    # False
+bool(0.0)  # False
+```
+除了可以将数字转换为布尔类型，还可以将字符串转换为布尔类型。当字符串是一个空字符串时，等价于False，否则就是True。
+
+```python
+bool('')   # False
+bool('a')  # True
+
 ```

@@ -1,7 +1,7 @@
 ## 第一个Python程序
 使用记事本创建一个后缀名为`py`的文件，如`test.py`，将下面的内容复制进去，并保存在`D:/test.py`下。
 
-```python{2}
+```python
 # -*- coding: utf-8 -*-
 print('Hello, 塔容万物')
 ```
@@ -10,14 +10,16 @@ print('Hello, 塔容万物')
 python D:/test.py
 ```
 
-🎉命令行上会显示
+🎉 命令行上会显示
 ```bash
 Hello, 塔容万物
 ```
+上面的代码中，`print`被称为函数，`'Hello, 塔容万物'`是函数的参数
+
 
 ## 使用VScode编写Python代码
 :::tip 提示
 本教程所有的代码都将使用VSCode进行编写运行
 :::
 
-![](/python/runcode-vscode.gif)
+![VScoder运行代码](/python/runcode-vscode.gif)
