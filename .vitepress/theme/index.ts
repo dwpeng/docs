@@ -1,7 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 
-import './style/Index.css'
+import './style/index.css'
 
 // @ts-ignore
 import WeChat from './components/WeChat.vue'
