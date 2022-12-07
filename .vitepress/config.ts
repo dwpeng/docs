@@ -22,5 +22,10 @@ export default defineConfig({
     },
     markdown: {
         lineNumbers: false
+    },
+    vite:{
+        build: {
+            assetsInlineLimit: 0,
+        }
     }
 })
