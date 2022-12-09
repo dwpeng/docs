@@ -1,6 +1,7 @@
 interface SidebarItem {
     text: string,
     link?: string,
+    collapsible?: boolean,
     items?: SidebarItem[]
 }
 
@@ -12,122 +13,204 @@ export const sidebar: Siderbar = {
     '/python/': [
         {
             text: '基础',
+            collapsible: true,
             items: [
                 {
-                    text: '前言',
+                    text: '介绍',
                     link: '/python/'
                 },
                 {
                     text: '安装',
-                    link: '/python/basic/install'
+                    link: '/python/install'
                 },
                 {
                     text: '第一个Python程序',
-                    link: '/python/basic/first-python'
+                    link: '/python/first-python'
                 },
                 {
                     text: '变量',
-                    link: '/python/basic/var',
+                    link: '/python/var/',
+                },
+                {
+                    text: '注释',
+                    link: '/python/comment/'
+                },
+                {
+                    text: '数据结构',
+                    link: '/python/data-struct/'
                 },
                 {
                     text: '运算符',
-                    link: '/python/basic/operation',
+                    link: '/python/operation/',
                 },
                 {
                     text: '控制流',
-                    link: '/python/basic/control-flow'
+                    link: '/python/control-flow/'
+                },
+                {
+                    text: '文件读写',
+                    link: '/python/io/'
                 },
             ]
         },
 
         {
-            text: '数据结构',
-            link: '/python/basic/data-struct/',
-            items: [
-                {
-                    text: '列表',
-                    link: '/python/basic/data-struct/list'
-                },
-                {
-                    text: '字典',
-                    link: '/python/basic/data-struct/dict'
-                },
-                {
-                    text: '元组',
-                    link: '/python/basic/data-struct/tuple'
-                },
-                {
-                    text: '集合',
-                    link: '/python/basic/data-struct/set'
-                }
-            ]
-        },
-
-        {
-            text: '函数',
-            link: '/python/basic/function/',
+            text: '进阶',
+            collapsible: true,
             items: [
                 {
                     text: '函数',
-                    link: '/python/basic/function/',
+                    link: '/python/function/',
                 },
                 {
-                    text: '参数',
-                    link: '/python/basic/function/args',
+                    text: '面向对象',
+                    link: '/python/class/',
                 },
                 {
-                    text: '装饰器',
-                    link: '/python/basic/function/decorator',
-                },
-            ]
-        },
-        {
-            text: '面向对象',
-            link: '/python/advanced/class/',
-            items: [
-                {
-                    text: '属性',
-                    link: '/python/advanced/class/property'
+                    text: '异常处理',
+                    link: '/python/exception/',
                 },
                 {
-                    text: '方法',
-                    link: '/python/advanced/class/method'
+                    text: '上下文管理',
+                    link: '/python/context/',
                 },
                 {
-                    text: '魔术方法',
-                    link: '/python/advanced/class/magic-method'
-                }
+                    text: '迭代器与生成器',
+                    link: '/python/iter/',
+                },
             ]
         },
         {
             text: '异步编程',
+            collapsible: true,
             items: [
                 {
                     text: '线程',
-                    link: '/python/advanced/thread'
+                    link: '/python/threading/'
                 },
                 {
                     text: '进程',
-                    link: '/python/advanced/process'
+                    link: '/python/process/'
                 },
                 {
-                    text: '异步',
-                    link: '/python/advanced/async'
+                    text: '协程',
+                    link: '/python/coroutine/'
+                },
+            ]
+        },
+        {
+            text: '难点解析',
+            collapsible: true,
+            items: [
+                {
+                    text: 'is与==',
+                    link: '/python/hard/is-and-eq'
+                },
+            ]
+        },
+        {
+            text: '包与模块',
+            collapsible: true,
+            items: [
+                {
+                    text: '模块系统',
+                    link: '/python/package/module'
+                },
+                {
+                    text: '包',
+                    link: '/python/package/package'
+                },
+                {
+                    text: 'pip',
+                    link: '/python/package/pip'
+                },
+            ]
+        },
+        {
+            text: '测试',
+            collapsible: true,
+            items: [
+                {
+                    text: '单元测试',
+                    link: '/python/test/unittest'
+                },
+                {
+                    text: '文档测试',
+                    link: '/python/test/doctest'
                 },
             ]
         },
         {
             text: '标准库',
-            link: '/python/std/',
+            collapsible: true,
             items: [
-
+                {
+                    text: 'os',
+                    link: '/python/std/os'
+                },
+                {
+                    text: 'sys',
+                    link: '/python/std/sys'
+                },
+                {
+                    text: 'json',
+                    link: '/python/std/json'
+                },
+                {
+                    text: 'time',
+                    link: '/python/std/time'
+                },
+                {
+                    text: 'datetime',
+                    link: '/python/std/datetime'
+                },
+                {
+                    text: 'argparse',
+                    link: '/python/std/argparse'
+                },
+                {
+                    text: 'typing',
+                    link: '/python/std/typing'
+                },
+                {
+                    text: 'dataclasses',
+                    link: '/python/std/dataclasses'
+                },
+                {
+                    text: 'enum',
+                    link: '/python/std/enum'
+                },
+                {
+                    text: 'collection',
+                    link: '/python/std/collection'
+                },
+                {
+                    text: 'functools',
+                    link: '/python/std/functools'
+                },
+                {
+                    text: 'itertools',
+                    link: '/python/std/itertools'
+                },
             ]
         },
+
         {
-            text: '代码风格',
-            link: '/python/style/',
+            text: '工具',
+            collapsible: true,
             items: [
-                
+                {
+                    text: '编辑器',
+                    link: '/python/tool/vscode'
+                },
+                {
+                    text: '虚拟环境',
+                    link: '/python/tool/env'
+                },
+                {
+                    text: '代码风格',
+                    link: '/python/tool/style'
+                },
             ]
         }
     ],

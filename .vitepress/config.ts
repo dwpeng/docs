@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { nav } from './nav'
 import { sidebar } from './sidbar'
+import { handleCode } from './markdown'
 
 export default defineConfig({
     title: '塔容万物',
@@ -21,7 +22,10 @@ export default defineConfig({
         outlineTitle: '目录',
     },
     markdown: {
-        lineNumbers: false
+        lineNumbers: false,
+        config: (md)=>{
+            md.use(handleCode)
+        }
     },
     vite:{
         build: {
