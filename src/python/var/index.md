@@ -2,7 +2,6 @@
 title: 变量
 ---
 
-
 ## 变量
 在Python中可以使用形如`a=1`的方式进行定义变量，`a`是变量名，`1`是变量值，`=`表示将`a`指向到`1`。
 
@@ -39,11 +38,12 @@ a = -1
 
 ## 浮点型
 带小数点数字
-```python
+```py
 a = 1.0
 a = 1.5
 a = -1.5
 ```
+
 
 ## 布尔类型
 Python中布尔类型只有两个成员
@@ -125,5 +125,9 @@ bool(0.0)  # False
 ```python
 bool('')   # False
 bool('a')  # True
+```
 
+None对应于False
+```py
+bool(None)  # False
 ```

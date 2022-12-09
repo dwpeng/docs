@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { nav } from './nav'
 import { sidebar } from './sidbar'
+import { handleCode } from './markdown'
 
 export default defineConfig({
     title: '塔容万物',
@@ -19,11 +20,23 @@ export default defineConfig({
         sidebar,
         outline: 'deep',
         outlineTitle: '目录',
+        socialLinks: [{
+            icon: 'github',
+            link: 'https://github.com/dwpeng/docs/'
+        }
+        ],
+        editLink: {
+            pattern: 'https://github.com/dwpeng/docs/edit/master/src/:path',
+            text: '编辑此页'
+        }
     },
     markdown: {
-        lineNumbers: false
+        lineNumbers: false,
+        config: (md) => {
+            md.use(handleCode)
+        }
     },
-    vite:{
+    vite: {
         build: {
             assetsInlineLimit: 0,
         }
