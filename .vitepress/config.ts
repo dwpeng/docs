@@ -20,14 +20,23 @@ export default defineConfig({
         sidebar,
         outline: 'deep',
         outlineTitle: '目录',
+        socialLinks: [{
+            icon: 'github',
+            link: 'https://github.com/dwpeng/docs/'
+        }
+        ],
+        editLink: {
+            pattern: 'https://github.com/dwpeng/docs/edit/master/src/:path',
+            text: '编辑此页'
+        }
     },
     markdown: {
         lineNumbers: false,
-        config: (md)=>{
+        config: (md) => {
             md.use(handleCode)
         }
     },
-    vite:{
+    vite: {
         build: {
             assetsInlineLimit: 0,
         }
