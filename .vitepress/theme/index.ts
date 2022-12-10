@@ -2,7 +2,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 
 import './style/index.css'
-
+import './baidu'
 // @ts-ignore
 import WeChat from './components/WeChat.vue'
 // @ts-ignore
