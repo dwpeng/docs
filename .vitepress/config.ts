@@ -9,6 +9,14 @@ export default defineConfig({
     srcDir: './src',
     outDir: './dist',
     head: [
+        ['script', {}, `var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?bd7e7a2890e38bc050dd06016eecb134";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        `],
         ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }]
     ],
     cleanUrls: 'with-subfolders',
