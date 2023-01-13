@@ -36,6 +36,10 @@ export const sidebar: Siderbar = {
                     link: '/python/comment/'
                 },
                 {
+                    text: '格式化',
+                    link: '/python/format/'
+                },
+                {
                     text: '数据结构',
                     link: '/python/data-struct/'
                 },
