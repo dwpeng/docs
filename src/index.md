@@ -2,19 +2,11 @@
 layout: home
 
 hero:
-  name: 塔容万物🏯
-  text: 编程、分析、软件
-  tagline: 小塔容万物
+  name: 塔容万物
+  tagline: 生活不止代码，还有远方
   image:
-    src: /logo.png
+    src: /asserts/logo.webp
     alt: 塔容万物
-#   actions:
-#     - theme: brand
-#       text: Get Started
-#       link: /guide/what-is-vitepress
-#     - theme: alt
-#       text: View on GitHub
-#       link: https://github.com/vuejs/vitepress
 ---
 
 <Index />
