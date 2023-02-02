@@ -6,13 +6,17 @@ import './style/index.css'
 import WeChat from './components/WeChat.vue'
 // @ts-ignore
 import Index from './components/Index/Index.vue'
+// @ts-ignore
+import Giscus from './components/Giscus.vue'
+
 
 export default {
     ...DefaultTheme,
     Layout() {
         return h(DefaultTheme.Layout, null, {
             // 'aside-outline-before': () => h(WeChat),
-            'doc-footer-before': () => h(WeChat)
+            'doc-footer-before': () => h(WeChat),
+            'doc-after': () => h(Giscus)
         })
     },
     enhanceApp(ctx) {

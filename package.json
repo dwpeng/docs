@@ -10,6 +10,7 @@
     "vue": "^3.2.45"
   },
   "dependencies": {
+    "@giscus/vue": "^2.2.6",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.11.18",
     "markdown-it": "^13.0.1"
