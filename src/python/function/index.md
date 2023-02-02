@@ -18,3 +18,12 @@ def 函数名(参数名):
 def add(a, b):
     print(a + b)
 ```
+
+### 带有默认参数
+```py
+def add(a, b=1):
+    c = a + b
+    print(c)
+```
+
+### 形参与实参
