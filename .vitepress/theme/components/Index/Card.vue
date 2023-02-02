@@ -1,18 +1,11 @@
 <script setup lang="ts">
 
-interface Itme {
-    name: string,
-    imgUrl: string,
-    url: string,
-    bgColor: string
-}
+import type { Item } from '../../../types';
 
-interface Props {
+defineProps<{
     title: string,
-    items: Itme[]
-}
-
-defineProps<Props>()
+    items: Item[]
+}>()
 
 </script>
 
