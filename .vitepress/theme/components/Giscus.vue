@@ -7,9 +7,9 @@ const { isDark } = useData();
 <template>
     <ClientOnly>
         <div class="comments-container">
-            <Giscus id="comments" repo="giscus/giscus-component" repoId="R_kgDOIkT__w" category="Q&A"
-                categoryId="DIC_kwDOIkT__84CT8y0" mapping="url" term="欢迎讨论" reactionsEnabled="1" emitMetadata="0"
-                inputPosition="bottom" :theme="isDark ? 'dark' : 'light'" lang="zh-CN" />
+            <Giscus id="comments" repo="dwpeng/docs" repoId="R_kgDOIkT__w" category="Q&A"
+                categoryId="DIC_kwDOIkT__84CT8y0" mapping="title" term="欢迎讨论" reactionsEnabled="1" emitMetadata="0"
+                inputPosition="top" :theme="isDark ? 'dark' : 'light'" lang="zh-CN" />
         </div>
     </ClientOnly>
 </template>
