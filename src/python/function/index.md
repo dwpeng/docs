@@ -16,6 +16,9 @@ def 函数名(参数名):
 def add(a, b):
     print(a + b)
 ```
+::: tip 注意
+函数的`return`语句并不是必需的，可以不写，当函数没有`return`语句时，默认返回`None`。
+:::
 
 ## 带有默认参数
 ```py
@@ -355,7 +358,7 @@ reduce
 ```py
 from functools import reduce
 
-arr = range(100)
+arr = range(10)
 
 print(
     reduce(
