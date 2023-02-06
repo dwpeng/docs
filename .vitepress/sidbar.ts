@@ -103,16 +103,6 @@ export const sidebar: Siderbar = {
             ]
         },
         {
-            text: '难点解析',
-            collapsible: true,
-            items: [
-                {
-                    text: 'is与==',
-                    link: '/python/hard/is-and-eq'
-                },
-            ]
-        },
-        {
             text: '包与模块',
             collapsible: true,
             items: [
