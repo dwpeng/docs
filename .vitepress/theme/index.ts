@@ -15,7 +15,7 @@ export default {
     Layout() {
         return h(DefaultTheme.Layout, null, {
             'aside-outline-after': () => h(WeChat),
-            // 'doc-footer-before': () => h(WeChat),
+            'doc-footer-before': () => h(WeChat),
             'doc-after': () => h(Giscus)
         })
     },

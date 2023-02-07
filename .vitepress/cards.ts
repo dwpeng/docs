@@ -8,7 +8,6 @@ export const cards: Card[] = [
                 name: 'Python',
                 imgUrl: '/asserts/python_128x128.png',
                 url: '/python/',
-                bgColor: '#1a1a1a'
             }
         ]
     },

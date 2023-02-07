@@ -12,7 +12,7 @@ defineProps<{
 <template>
     <h2 class="card-group-title">{{ title }}</h2>
     <div class="card-itmes">
-        <div class="card" v-for="card in items" :key="card.name" :style="{ 'background-color': card.bgColor }">
+        <div class="card" v-for="card in items" :key="card.name">
             <a :href="card.url">
                 <div class="wrapper">
                     <img :src="card.imgUrl" alt="">
@@ -68,8 +68,8 @@ defineProps<{
         text-align: center;
         padding: 20px;
         box-sizing: border-box;
-        border-radius: 4px;
-
+        border-radius: 8px;
+        border: 2px solid;
         .wrapper {
             width: 100%;
             display: flex;
@@ -85,7 +85,7 @@ defineProps<{
 
 
         &:hover {
-            opacity: 0.8;
+            border-color: #6a57f6;
         }
 
         img {
@@ -98,7 +98,6 @@ defineProps<{
             font-size: 20px;
             font-weight: 600;
             margin-top: 10px;
-            color: #fff;
         }
     }
 
