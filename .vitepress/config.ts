@@ -5,7 +5,9 @@ import { handleCode } from './markdown'
 import { cards } from './cards'
 
 let head = [
-    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }]
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['meta', {name : 'keywords', content: 'Python,Python教程,零基础学Python,python,python3,Python3,编程'}],
+    ['meta', {name: 'description', content: '零基础学Python，由浅及深，循序渐进。' }]
 ]
 
 if(process.env.NODE_ENV){
