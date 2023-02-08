@@ -79,7 +79,7 @@ export const sidebar: Siderbar = {
                     link: '/python/context/',
                 },
                 {
-                    text: '迭代器与生成器',
+                    text: '迭代器',
                     link: '/python/iter/',
                 },
             ]
