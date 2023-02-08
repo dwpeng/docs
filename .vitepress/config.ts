@@ -22,6 +22,15 @@ if(process.env.NODE_ENV){
       s.parentNode.insertBefore(hm, s);
     })();
     `])
+    // @ts-ignore
+    head.push(['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-GM7DD3G5HL'}])
+    // @ts-ignore
+    head.push(['script', {}, `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-GM7DD3G5HL');
+    `])
 }
 
 
