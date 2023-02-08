@@ -336,6 +336,17 @@ def timer(func):
     return inner
 ```
 
+## 生成器函数
+与普通函数不同，生成器函数使用了`yield`代替`return`返回值，生成器函数返回一个生成器对象，可以通过循环的方式进行迭代
+```py
+def gen(n):
+    for i in range(n):
+        yield i * i
+
+g = gen(5)
+print([i for i in g])
+# [0, 1, 4, 9, 16]
+```
 
 ## 匿名函数
 
