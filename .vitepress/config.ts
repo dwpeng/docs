@@ -10,7 +10,7 @@ let head = [
     ['meta', {name: 'description', content: '零基础学Python，由浅及深，循序渐进。' }]
 ]
 
-if(process.env.NODE_ENV){
+if(!process.env.NODE_ENV){
     // @ts-ignore
     head.push(['script', {}, `var _hmt = _hmt || [];
     (function() {
@@ -31,6 +31,8 @@ if(process.env.NODE_ENV){
     
       gtag('config', 'G-GM7DD3G5HL');
     `])
+    // @ts-ignore
+    head.push(['script', {async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5247553446852481', crossorigin:'anonymous'}])
 }
 
 
