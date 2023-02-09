@@ -82,6 +82,14 @@ export const sidebar: Siderbar = {
                     text: '迭代器',
                     link: '/python/iter/',
                 },
+                {
+                    text: '模块系统',
+                    link: '/python/package/module'
+                },
+                {
+                    text: 'pip',
+                    link: '/python/package/pip'
+                },
             ]
         },
         {
@@ -103,24 +111,6 @@ export const sidebar: Siderbar = {
             ]
         },
         {
-            text: '包与模块',
-            collapsible: true,
-            items: [
-                {
-                    text: '模块系统',
-                    link: '/python/package/module'
-                },
-                {
-                    text: '包',
-                    link: '/python/package/package'
-                },
-                {
-                    text: 'pip',
-                    link: '/python/package/pip'
-                },
-            ]
-        },
-        {
             text: '测试',
             collapsible: true,
             items: [
@@ -132,6 +122,16 @@ export const sidebar: Siderbar = {
                     text: '文档测试',
                     link: '/python/test/doctest'
                 },
+            ]
+        },
+        {
+            text: '杂谈',
+            collapsible: true,
+            items: [
+                {
+                    text: '浅拷贝与深拷贝',
+                    link: '/python/chore/copy_and_deepcopy'
+                }
             ]
         },
         {
@@ -188,7 +188,6 @@ export const sidebar: Siderbar = {
                 },
             ]
         },
-
         {
             text: '工具',
             collapsible: true,

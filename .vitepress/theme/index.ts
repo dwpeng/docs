@@ -9,12 +9,15 @@ import Index from './components/Index/Index.vue'
 // @ts-ignore
 import Giscus from './components/Giscus.vue'
 
+// @ts-ignore
+import GoogleAd from './components/GoogleAd.vue';
+
 
 export default {
     ...DefaultTheme,
     Layout() {
         return h(DefaultTheme.Layout, null, {
-            'aside-outline-after': () => h(WeChat),
+            'aside-outline-after': () => h(GoogleAd),
             'doc-footer-before': () => h(WeChat),
             'doc-after': () => h(Giscus)
         })
