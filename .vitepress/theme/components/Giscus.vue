@@ -11,7 +11,6 @@ const show = ref(true)
 onMounted(() => {
     let UserAgent = window.navigator.userAgent.toLowerCase()
     let isqq = UserAgent.indexOf('qq') > -1
-    console.log(UserAgent, isqq)
     if (isqq) {
         show.value = false
     }
