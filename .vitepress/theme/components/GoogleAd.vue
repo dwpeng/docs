@@ -18,16 +18,16 @@ const init = () => {
             data-full-width-responsive="true"></ins>`
 
         const r = document.createElement('script')
-        r.innerHTML = '(adsbygoogle = window.adsbygoogle || []).push({});'
+        r.innerText = '(adsbygoogle = window.adsbygoogle || []).push({});'
         container.value.appendChild(r)
     }
 }
 
-if (!process.env.NODE_ENV) {
-    onMounted(() => {
-        init()
-    })
-}
+onMounted(() => {
+    setTimeout(()=>{
+        init();
+    }, 2 * 1000)
+})
 
 
 </script>
