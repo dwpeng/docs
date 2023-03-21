@@ -384,9 +384,9 @@ class Person:
     # 实现了__call__方法
     # 对象就是可以被调用的
     def __call__(self, age):
-        print('%d岁了' % self.age)
+        print('%d岁了' % age)
 
-p = Person()
+p = Person('Jack')
 print(len(p))  # 10
 
 p(18)  # 18岁了
