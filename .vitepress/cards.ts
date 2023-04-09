@@ -2,7 +2,7 @@ import type { Card } from './types'
 
 export const cards: Card[] = [
     {
-        title: '编程',
+        title: '文档',
         items: [
             {
                 name: 'Python',
